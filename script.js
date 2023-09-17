@@ -1,3 +1,4 @@
+// when button is clicked
 const buttons = document.querySelectorAll(".btn");
 const image = document.querySelectorAll(".image");
 
@@ -18,4 +19,16 @@ buttons.forEach((button) => {
       }
     });
   });
+});
+
+
+// video play on hover
+let video = document.getElementById("video");
+
+video.addEventListener("mouseover", (e) => {
+    video.play();
+});
+
+video.addEventListener("mouseout", (e) => {
+    video.pause();
 });

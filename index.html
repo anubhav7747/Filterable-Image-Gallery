@@ -20,6 +20,7 @@
             <a href="#" class="btn" data-filter="design">Design</a>
             <a href="#" class="btn" data-filter="logo">Logo</a>
             <a href="#" class="btn" data-filter="sports">Sports</a>
+            <a href="#" class="btn" data-filter="video">Video</a>
         </div>
 
         <div class="box" id="images">
@@ -41,7 +42,9 @@
             </div>
             
             <div class="image video sports">
-                <iframe src="/images/sports.mp4" frameborder="0" id="video" allowfullscreen></iframe>
+                <video muted playsinline onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;" id="vid" poster="">
+                    <source src="/images/sports.mp4" type="video/mp4">
+                </video>
             </div>
 
             <div class="image logo">
